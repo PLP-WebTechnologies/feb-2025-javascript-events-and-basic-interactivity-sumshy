@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f6f8;
+    color: #333;
+  }
+  
+  h1, h2 {
+    color: #6200ea;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #03a9f4;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0288d1;
+  }
+  
+  #hoverBox, #secretBox {
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #eee;
+    border: 2px dashed #ccc;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .tabs {
+    margin-top: 20px;
+  }
+  
+  .tab-content {
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  
+  .gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 1em;
+  }
+  
+  small {
+    color: red;
+  }
+  
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #888;
+  }
+  
+  #galleryImage {
+    width: 300px;      /* Set the width you want */
+    height: auto;      /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #galleryImage:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }  

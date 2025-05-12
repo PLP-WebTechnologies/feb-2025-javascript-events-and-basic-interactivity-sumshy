@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Interactive Playground</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🎯 JavaScript Interactive Playground</h1>
+  </header>
+
+  <main>
+    <!-- Event Handling Section -->
+    <section>
+      <h2>1️⃣ Event Handling</h2>
+      <button id="clickBtn">Click Me!</button>
+      <div id="hoverBox">Hover over me!</div>
+      <p>Press any key: <span id="keyOutput">_</span></p>
+      <div id="secretBox">Double-click me for a surprise!</div>
+    </section>
+
+    <!-- Interactive Elements -->
+    <section>
+      <h2>2️⃣ Interactive Elements</h2>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab" data-tab="1">Tab 1</button>
+        <button class="tab" data-tab="2">Tab 2</button>
+        <button class="tab" data-tab="3">Tab 3</button>
+      </div>
+      <div class="tab-content" id="tab1">This is content for Tab 1.</div>
+      <div class="tab-content" id="tab2" style="display: none;">Here's Tab 2 content.</div>
+      <div class="tab-content" id="tab3" style="display: none;">And this is Tab 3!</div>
+
+      <!-- Image Gallery -->
+      <div class="gallery">
+        <button id="prevBtn">⬅️ Prev</button>
+        <img id="galleryImage" src="https://via.placeholder.com/300x200?text=Image+1" alt="Gallery">
+        <button id="nextBtn">Next ➡️</button>
+      </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+      <h2>3️⃣ Form Validation</h2>
+      <form id="signupForm" novalidate>
+        <label>Name:
+          <input type="text" id="name" required />
+        </label>
+
+        <label>Email:
+          <input type="email" id="email" required />
+        </label>
+
+        <label>Password:
+          <input type="password" id="password" required />
+        </label>
+        <small id="passwordFeedback"></small>
+
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>🚀 Built with JavaScript & creativity!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
